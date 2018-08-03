@@ -18,7 +18,14 @@ class Driver {
   }
 
   passengers() {
-    return
+    return trips().map(function (trip) {
+      return store.drivers.find(function (driver) {
+        return driver.id == trip.driverId
+      })
+    })
+
+
+
   }
 }
 
