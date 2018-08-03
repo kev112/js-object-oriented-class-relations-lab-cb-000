@@ -53,13 +53,12 @@ class Trip {
     this.driverId = driver.id
     this.passengerId = passenger.id
     this.id = ++tripId
+    this.driver = driver
     store.trips.push(this)
   }
 
   driver() {
-    return store.drivers.find(function (driver) {
-      driver.id == this.driverId
-    })
+
   }
 
   passenger() {
