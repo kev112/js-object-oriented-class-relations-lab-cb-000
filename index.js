@@ -12,7 +12,9 @@ class Driver {
   }
 
   trips() {
-    return
+    return store.trips.filter(function (trip) {
+      return trip.driverId == this.id
+    })
   }
 
   passengers() {
