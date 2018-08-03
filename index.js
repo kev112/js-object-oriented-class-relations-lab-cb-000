@@ -57,7 +57,9 @@ class Trip {
   }
 
   driver() {
-    return this.driver
+    return store.drivers.find(function (driver) {
+      
+    })
   }
 
   passenger() {
