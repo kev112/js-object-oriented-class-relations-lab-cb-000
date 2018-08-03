@@ -11,7 +11,7 @@ let passengerId = 0
 
 class Driver {
   constructor(name) {
-    this.id =
+    this.id = ++driverId
     this.name = name
   }
 
