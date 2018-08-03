@@ -34,11 +34,17 @@ class Passenger {
   }
 
   trips() {
-    return
+    return store.trips.filter(function (trip) {
+      return trip.passengerId == this.id
+    })
   }
 
   drivers() {
-    return
+    return trips().map(function (trip) {
+      return store.drivers.find(function (driver) {
+        return driver.id == trip.driverId
+      })
+    })
   }
 }
 
