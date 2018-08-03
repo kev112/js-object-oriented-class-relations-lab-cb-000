@@ -53,7 +53,6 @@ class Trip {
     this.driverId = driver.id
     this.passengerId = passenger.id
     this.id = ++tripId
-    this.driver = driver
     store.trips.push(this)
   }
 
