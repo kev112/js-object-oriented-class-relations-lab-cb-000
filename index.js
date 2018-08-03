@@ -46,5 +46,7 @@ class Trips {
     this.id = ++tripId
   }
 
-
+  driver() {
+    return this.driver
+  }
 }
