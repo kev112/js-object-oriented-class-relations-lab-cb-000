@@ -23,3 +23,24 @@ class Driver {
     return
   }
 }
+
+class Passenger {
+  constructor(name) {
+    this.id =
+    this.name = name
+  }
+
+  trips() {
+    return
+  }
+
+  drivers() {
+    return
+  }
+}
+
+class Trips {
+  constructor() {
+    
+  }
+}
