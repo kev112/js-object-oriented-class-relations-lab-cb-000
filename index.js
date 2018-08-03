@@ -23,9 +23,6 @@ class Driver {
         return driver.id == trip.driverId
       })
     })
-
-
-
   }
 }
 
