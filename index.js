@@ -40,7 +40,10 @@ class Passenger {
 }
 
 class Trips {
-  constructor() {
-    
+  constructor(driver, passenger) {
+    this.driver = driver
+    this.passenger = passenger
   }
+
+
 }
